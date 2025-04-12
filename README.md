@@ -115,16 +115,19 @@ const newDiv = new dsDOM().create('div');
 
 ## ⚡ Benchmark Comparison (on MeasureThat)
 
-[🔗 Benchmark result](https://www.measurethat.net/Benchmarks/ShowResult/599046)
+> Based on test: [dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto](https://www.measurethat.net/Benchmarks/Show/34205/3/dsdom-vs-vanilla-vs-cash-vs-bliss-vs-umbrella-vs-zepto)
 
-| Operation              | dsDOM              | jQuery             | CashDOM           | Bliss             |
-|------------------------|--------------------|--------------------|-------------------|-------------------|
-| Get ID                | 1.22M ops/sec      | 735k ops/sec       | 1.44M ops/sec     | 1.05M ops/sec     |
-| Get Text              | 814k ops/sec       | 458k ops/sec       | 956k ops/sec      | 761k ops/sec      |
-| Get HTML              | 833k ops/sec       | 527k ops/sec       | 977k ops/sec      | 730k ops/sec      |
+| **Library**         | **Get ID**               | **Get Text**             | **Get HTML**             |
+|---------------------|--------------------------|--------------------------|--------------------------|
+| **Vanilla JS**      | 10,139,430 ops/sec       | 3,254,263 ops/sec        | 3,090,395 ops/sec        |
+| **dsDOM**           | **1,226,485 ops/sec**    | **814,445 ops/sec**      | **833,659 ops/sec**      |
+| **Cash**            | 1,440,153 ops/sec        | 956,378 ops/sec          | 977,285 ops/sec          |
+| **Bliss**           | 1,049,452 ops/sec        | 761,360 ops/sec          | 730,163 ops/sec          |
+| **Zepto**           | 741,897 ops/sec          | 631,274 ops/sec          | 632,089 ops/sec          |
+| **Umbrella**        | 672,784 ops/sec          | 561,320 ops/sec          | 564,235 ops/sec          |
+| **jQuery**          | 735,749 ops/sec          | 458,061 ops/sec          | 527,379 ops/sec          |
 
-> Tested on: [MeasureThat.net](https://www.measurethat.net)
-
+> Measured using [MeasureThat.net](https://www.measurethat.net)
 
 
 | Operation               | dsDOM                | jQuery               |
