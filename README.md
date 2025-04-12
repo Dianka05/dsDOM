@@ -15,6 +15,7 @@
 CDN (jsDelivr):
 
 ```html
+<script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@v0.1.1/lib/dsDOM.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@latest/lib/dsDOM.js"></script>
 ```
 
