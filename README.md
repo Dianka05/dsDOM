@@ -3,6 +3,8 @@
 **dsDOM** is a lightweight and experimental DOM manipulation library. It’s inspired by jQuery but built from scratch using modern JavaScript APIs. The project is at an early stage and still actively evolving.
 
 [📈 View Benchmark = dsDOM vs JQuery (clone, event, add clsss, remove class, selection, remove element, css) ](https://www.measurethat.net/Benchmarks/ShowResult/599075)
+
+
 [📈 View Benchmark = dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto vs jQuery JS Library Speed Test](https://www.measurethat.net/Benchmarks/ShowResult/599046)
 
 
