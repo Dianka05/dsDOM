@@ -2,8 +2,8 @@
 
 **dsDOM** is a lightweight and experimental DOM manipulation library. It’s inspired by jQuery but built from scratch using modern JavaScript APIs. The project is at an early stage and still actively evolving.
 
-[📈 View Benchmark](https://www.measurethat.net/Benchmarks/ShowResult/599034)
-[📈 See benchmark results](https://www.measurethat.net/Benchmarks/ShowResult/599046)
+[📈 View Benchmark = dsDOM vs JQuery (clone, event, add clsss, remove class, selection, remove element, css) ](https://www.measurethat.net/Benchmarks/ShowResult/599075)
+[📈 View Benchmark = dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto vs jQuery JS Library Speed Test](https://www.measurethat.net/Benchmarks/ShowResult/599046)
 
 
 ---
@@ -110,7 +110,7 @@ const newDiv = new dsDOM().create('div');
 - `.val()` support
 - Animations
 - `fetch()` wrapper
-
+- inprove `.listen()` event optimization
 ---
 
 ## ⚡ Benchmark Comparison (on MeasureThat)
@@ -132,13 +132,13 @@ const newDiv = new dsDOM().create('div');
 
 | Operation               | dsDOM                | jQuery               |
 |------------------------|----------------------|----------------------|
-| Cloning                | 1.22 million ops/sec | 76k ops/sec          |
-| Add class              | 1.3 million ops/sec  | 488k ops/sec         |
-| Style manipulation     | 1.17 million ops/sec | 293k ops/sec         |
-| Remove element         | 2.5 million ops/sec  | 750k ops/sec         |
-| Element selection      | 4.18 million ops/sec | 750k ops/sec         |
+| Cloning                | 1,219,098 ops/sec |  107,259 ops/sec          |
+| Add class (single/multiple)              | 1,248,630 ops/sec /  681,067 ops/sec  | 484,697 ops/sec / 237,411 ops/sec         |
+| Style manipulation     | 958,728 ops/sec |  318,912 ops/sec         |
+| Remove element         | 1,980,806 ops/sec  | 714,468 ops/sec         |
+| Element selection      | 3,780,075 ops/sec | 607,248 ops/sec         |
 
-[🔗 View Benchmark](https://www.measurethat.net/Benchmarks/ShowResult/599034)
+[🔗 View Benchmark](https://www.measurethat.net/Benchmarks/ShowResult/599075)
 
 ---
 
