@@ -3,6 +3,8 @@
 **dsDOM** is a lightweight and experimental DOM manipulation library. It’s inspired by jQuery but built from scratch using modern JavaScript APIs. The project is at an early stage and still actively evolving.
 
 [📈 View Benchmark](https://www.measurethat.net/Benchmarks/ShowResult/599034)
+[📈 See benchmark results](https://www.measurethat.net/Benchmarks/ShowResult/599046)
+
 
 ---
 
@@ -111,9 +113,19 @@ const newDiv = new dsDOM().create('div');
 
 ---
 
-
-
 ## ⚡ Benchmark Comparison (on MeasureThat)
+
+[🔗 Benchmark result](https://www.measurethat.net/Benchmarks/ShowResult/599046)
+
+| Operation              | dsDOM              | jQuery             | CashDOM           | Bliss             |
+|------------------------|--------------------|--------------------|-------------------|-------------------|
+| Get ID                | 1.22M ops/sec      | 735k ops/sec       | 1.44M ops/sec     | 1.05M ops/sec     |
+| Get Text              | 814k ops/sec       | 458k ops/sec       | 956k ops/sec      | 761k ops/sec      |
+| Get HTML              | 833k ops/sec       | 527k ops/sec       | 977k ops/sec      | 730k ops/sec      |
+
+> Tested on: [MeasureThat.net](https://www.measurethat.net)
+
+
 
 | Operation               | dsDOM                | jQuery               |
 |------------------------|----------------------|----------------------|
