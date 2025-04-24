@@ -5,7 +5,7 @@
 [📈 View Benchmark = dsDOM vs JQuery (clone, event, add clsss, remove class, selection, remove element, css) ](https://www.measurethat.net/Benchmarks/ShowResult/599075)
 
 
-[📈 View Benchmark = dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto vs jQuery JS Library Speed Test](https://www.measurethat.net/Benchmarks/ShowResult/599046)
+[📈 View Benchmark = dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto vs jQuery JS Library Speed Test](https://www.measurethat.net/Benchmarks/ShowResult/599100)
 
 
 ---
@@ -15,6 +15,7 @@
 CDN (jsDelivr):
 
 ```html
+<script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@v0.1.1/lib/dsDOM.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@latest/lib/dsDOM.js"></script>
 ```
 
@@ -112,22 +113,22 @@ const newDiv = new dsDOM().create('div');
 - `.val()` support
 - Animations
 - `fetch()` wrapper
-- inprove `.listen()` event optimization
+- improve `.listen()` event optimization
 ---
 
 ## ⚡ Benchmark Comparison (on MeasureThat)
 
-> Based on test: [dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto](https://www.measurethat.net/Benchmarks/Show/34205/3/dsdom-vs-vanilla-vs-cash-vs-bliss-vs-umbrella-vs-zepto)
+> Based on test v0.1.1: [dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto](https://www.measurethat.net/Benchmarks/Show/34205/3/dsdom-vs-vanilla-vs-cash-vs-bliss-vs-umbrella-vs-zepto)
 
 | **Library**         | **Get ID**               | **Get Text**             | **Get HTML**             |
 |---------------------|--------------------------|--------------------------|--------------------------|
-| **Vanilla JS**      | 10,139,430 ops/sec       | 3,254,263 ops/sec        | 3,090,395 ops/sec        |
-| **dsDOM**           | **1,226,485 ops/sec**    | **814,445 ops/sec**      | **833,659 ops/sec**      |
-| **Cash**            | 1,440,153 ops/sec        | 956,378 ops/sec          | 977,285 ops/sec          |
-| **Bliss**           | 1,049,452 ops/sec        | 761,360 ops/sec          | 730,163 ops/sec          |
-| **Zepto**           | 741,897 ops/sec          | 631,274 ops/sec          | 632,089 ops/sec          |
-| **Umbrella**        | 672,784 ops/sec          | 561,320 ops/sec          | 564,235 ops/sec          |
-| **jQuery**          | 735,749 ops/sec          | 458,061 ops/sec          | 527,379 ops/sec          |
+| **Vanilla JS**      | 22,975,690 ops/sec       | 7,063,657 ops/sec        | 6,342,637 ops/sec        |
+| **dsDOM**           | **4,014,924 ops/sec**    | **2,941,924 ops/sec**      | **2,696,150 ops/sec**      |
+| **Cash**            | 3,566,875 ops/sec        | 2,718,670 ops/sec          | 2,488,740 ops/sec          |
+| **Bliss**           | 2,184,294 ops/sec        | 1,817,807 ops/sec          | 2,389,749 ops/sec           |
+| **Zepto**           | 2,877,201 ops/sec          | 783,890 ops/sec          | 1,747,541 ops/sec          |
+| **Umbrella**        | 496,050 ops/sec          | 476,626 ops/sec          | 461,320 ops/sec          |
+| **jQuery**          | 2,389,749 ops/sec          | 1,304,159 ops/sec          | 1,485,034 ops/sec          |
 
 > Measured using [MeasureThat.net](https://www.measurethat.net)
 
