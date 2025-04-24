@@ -15,7 +15,7 @@
 CDN (jsDelivr):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@v0.1.1/lib/dsDOM.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@v0.1.2/lib/dsDOM.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Dianka05/dsDOM@latest/lib/dsDOM.js"></script>
 ```
 
@@ -77,7 +77,9 @@ el.css({ color: 'blue', fontSize: '20px' });
 ### 🗣 Event Handling
 
 ```js
-el.listen('click', null, () => alert('Clicked!'));
+const el3 = new dsDOM('#testButton');
+el3.listen('click', () => console.log('first'));
+dsDOM.document.listen('click', '#testButton', () => console.log('first'));
 ```
 
 With delegation:
@@ -113,7 +115,6 @@ const newDiv = new dsDOM().create('div');
 - `.val()` support
 - Animations
 - `fetch()` wrapper
-- improve `.listen()` event optimization
 ---
 
 ## ⚡ Benchmark Comparison (on MeasureThat)
