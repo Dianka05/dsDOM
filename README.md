@@ -2,7 +2,7 @@
 
 **dsDOM** is a lightweight and experimental DOM manipulation library. It’s inspired by jQuery but built from scratch using modern JavaScript APIs. The project is at an early stage and still actively evolving.
 
-[📈 View Benchmark = dsDOM vs JQuery (clone, event, add clsss, remove class, selection, remove element, css) ](https://www.measurethat.net/Benchmarks/ShowResult/599075)
+[📈 View Benchmark = dsDOM vs JQuery (clone, event, add clsss, remove class, selection, remove element, css) ](https://www.measurethat.net/Benchmarks/ShowResult/601542)
 
 
 [📈 View Benchmark = dsDOM vs Vanilla vs Cash vs Bliss vs Umbrella vs Zepto vs jQuery JS Library Speed Test](https://www.measurethat.net/Benchmarks/ShowResult/599100)
@@ -136,13 +136,15 @@ const newDiv = new dsDOM().create('div');
 
 | Operation               | dsDOM                | jQuery               |
 |------------------------|----------------------|----------------------|
-| Cloning                | 1,219,098 ops/sec |  107,259 ops/sec          |
-| Add class (single/multiple)              | 1,248,630 ops/sec /  681,067 ops/sec  | 484,697 ops/sec / 237,411 ops/sec         |
-| Style manipulation     | 958,728 ops/sec |  318,912 ops/sec         |
-| Remove element         | 1,980,806 ops/sec  | 714,468 ops/sec         |
-| Element selection      | 3,780,075 ops/sec | 607,248 ops/sec         |
+| Cloning                | 340,435 ops/sec |  78,011 ops/sec          |
+| Add class (single/multiple)              | 1,385,516 ops/sec /  794,052 ops/sec  |  505,400 ops/sec /  252,239 ops/sec         |
+| Style manipulation     | 898,944 ops/sec |  268,165  ops/sec         |
+| Remove element         | 3,272,526 ops/sec  | 762,805 ops/sec         |
+| Element selection      | 4,114,659 ops/sec | 728,563 ops/sec         |
+| event element -> child      | 1,713,778 ops/sec | 501,785 ops/sec         |
+| event document -> element     | 2,516,111 ops/sec | 551,252 ops/sec         |
 
-[🔗 View Benchmark](https://www.measurethat.net/Benchmarks/ShowResult/599075)
+[🔗 View Benchmark](https://www.measurethat.net/Benchmarks/ShowResult/601542)
 
 ---
 
